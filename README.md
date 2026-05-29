@@ -3,7 +3,7 @@
 
 Code for paper: **PRISM: Programming Interactive Scenes from Monocular Images for Embodied Simulation**.
 
-**Paper status:** under review.
+**Paper under review**.
 
 ## Abstract
 
