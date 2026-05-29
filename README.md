@@ -7,17 +7,17 @@ Code for paper: **PRISM: Programming Interactive Scenes from Monocular Images fo
 
 ## Abstract
 
-PRISM transforms a single RGB image into executable, simulation-ready interactive scenes with programmable geometry, articulation, physical properties, and scene layout. It reformulates monocular scene reconstruction as a procedural programming task for interactive 3D environments, using multimodal large language models to generate object assets and scene programs.
+NeoWorld-Pro transforms a single RGB image into executable, simulation-ready interactive scenes with programmable geometry, articulation, physical properties, and scene layout. It reformulates monocular scene reconstruction as a procedural programming task for interactive 3D environments, using multimodal large language models to generate object assets and scene programs.
 
-To improve simulation readiness, PRISM introduces a physics-in-the-loop refinement mechanism. Generated programs are executed in a physics engine, and simulation feedback is used to iteratively correct object geometry, articulation, collision, mass, support relations, and scene consistency. The resulting scenes support stable stacking, fine-grained manipulation, and articulated object interactions for embodied simulation.
+To improve simulation readiness, NeoWorld-Pro introduces a physics-in-the-loop refinement mechanism. Generated programs are executed in a physics engine, and simulation feedback is used to iteratively correct object geometry, articulation, collision, mass, support relations, and scene consistency. The resulting scenes support stable stacking, fine-grained manipulation, and articulated object interactions for embodied simulation.
 
 ## Method Overview
 
 <p align="center">
-  <img src="asset/method.png" width="900" alt="PRISM method overview">
+  <img src="asset/method.png" width="900" alt="NeoWorld-Pro method overview">
 </p>
 
-PRISM follows a two-level closed loop:
+NeoWorld-Pro follows a two-level closed loop:
 
 - **Scene parsing:** predict scene hierarchy, object boxes, support relations, and occlusion cues from the input image.
 - **Procedural asset programming:** generate editable Blender, URDF, and USD assets for foreground objects.
@@ -26,10 +26,10 @@ PRISM follows a two-level closed loop:
 
 ## Benchmark and Results
 
-PRISM is evaluated on PartNet-Mobility and a synthetic scene benchmark for physically executable multi-object environments. The benchmark includes **100 object categories**, **80 articulated categories**, **30 USD-format scenes**, and **84 downstream manipulation tasks**. Across these tasks, PRISM achieves a **92.85% task success rate**.
+NeoWorld-Pro is evaluated on PartNet-Mobility and a synthetic scene benchmark for physically executable multi-object environments. The benchmark includes **100 object categories**, **80 articulated categories**, **30 USD-format scenes**, and **84 downstream manipulation tasks**. Across these tasks, NeoWorld-Pro achieves a **92.85% task success rate**.
 
 <p align="center">
-  <img src="asset/task.png" width="900" alt="PRISM benchmark tasks">
+  <img src="asset/task.png" width="900" alt="NeoWorld-Pro benchmark tasks">
 </p>
 
 ### Object-Level Results
